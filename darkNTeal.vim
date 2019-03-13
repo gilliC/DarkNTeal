@@ -17,7 +17,7 @@ let s:seaGreen= ['#45CB85',78]
 let s:deepSkyBlue=['#188FA7',31]
 let s:cyan=['#52FFFF',87]
 let s:pink=['#F397D6',212]
-let s:blue=['#192BC2',19]
+let s:lightBlue=['#ACD7EC',153]
 function!  Coloring(group, ...)
   let histring = 'hi ' . a:group . ' '
   let histring .= 'guibg=' . a:1 . ' '
@@ -30,7 +30,7 @@ function!  Coloring(group, ...)
   execute histring
 endfunction
 
-call Coloring("Normal",s:bg[0],s:fg[0],"NONE","NONE",s:fg[1])
+call Coloring("Normal",s:bg[0],s:fg[0],"NONE",s:bg[1],s:fg[1])
 call Coloring("Comment",s:cadetBlue[0],s:white[0],"italic",s:cadetBlue[1],s:white[1])
 call Coloring("Constant","NONE",s:mediumTurquoise[0],"NONE","NONE",s:mediumTurquoise[1])
 call Coloring("String","NONE",s:cadetBlue[0],"NONE","NONE",s:cadetBlue[1])
@@ -38,10 +38,10 @@ call Coloring("Number","NONE",s:mediumPurple[0],"bold","NONE",s:mediumPurple[1])
 call Coloring("Boolean","NONE",s:seaGreen[0],"bold","NONE",s:seaGreen[1])
 call Coloring("Identifier","NONE",s:deepSkyBlue[0],"bold","NONE",s:deepSkyBlue[1])
 call Coloring("Function","NONE",s:cyan[0],"bold","NONE",s:cyan[1])
-call Coloring("Statment","NONE",s:mediumTurquoise2[0],"bold","NONE",s:mediumTurquoise2[1])
+call Coloring("Statement","NONE",s:lightBlue[0],"bold","NONE",s:lightBlue[1])
 call Coloring("PreProc","NONE",s:seaGreen[0],"bold","NONE",s:seaGreen[1])
 call Coloring("Type","NONE",s:pink[0],"bold","NONE",s:pink[1])
-call Coloring("Special","NONE",s:white[0],"NONE","NONE",s:white[1])
+call Coloring("Special","NONE",s:white[0],"italic","NONE",s:white[1])
 call Coloring("Pmenu",s:cadetBlue[0],s:white[0],"bold",s:cadetBlue[1],s:white[1])
 " JS                
 call Coloring("js","NONE",s:mediumTurquoise3[0],"NONE","NONE",s:mediumTurquoise3[1])
