@@ -4,7 +4,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "Gillis theme"
+let g:colors_name = "DarkNTeal"
 let s:bg =['#232626',235]
 let s:fg =['#C5D6D6',188]
 let s:white =['#FFFFFF',15]
@@ -30,7 +30,7 @@ function!  Coloring(group, ...)
   execute histring
 endfunction
 
-call Coloring("Normal",s:bg[0],s:fg[0],"NONE",s:bg[1],s:fg[1])
+call Coloring("Normal",s:bg[0],s:fg[0],"NONE","NONE",s:fg[1])
 call Coloring("Comment",s:cadetBlue[0],s:white[0],"italic",s:cadetBlue[1],s:white[1])
 call Coloring("Constant","NONE",s:mediumTurquoise[0],"NONE","NONE",s:mediumTurquoise[1])
 call Coloring("String","NONE",s:cadetBlue[0],"NONE","NONE",s:cadetBlue[1])
@@ -45,6 +45,7 @@ call Coloring("Special","NONE",s:white[0],"NONE","NONE",s:white[1])
 call Coloring("Pmenu",s:cadetBlue[0],s:white[0],"bold",s:cadetBlue[1],s:white[1])
 " JS                
 call Coloring("js","NONE",s:mediumTurquoise3[0],"NONE","NONE",s:mediumTurquoise3[1])
+highlight link jsClassKeyword Type
 highlight link jsThis Type
 highlight link jsReturn Type
 " NERDTree          
