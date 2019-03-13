@@ -1,5 +1,7 @@
 # Dark & Cyan theme <br />
-Just add to your .vim/colors folder, and in .vimrc change your: <br />
+Just add `darkNCyan.vim` to your .vim/colors folder, and in .vimrc change your: <br />
 `colorscheme darkNCyan`
 <br />
-At the moment doesn't apply to the terminal **:(**
+
+![Screenshot of the theme](./assets/PictureForREADME.png?raw=true )
+
